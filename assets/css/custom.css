@@ -7,16 +7,16 @@ html {
   padding: 0;
 }
 
-.navbar{
+/* .navbar{
     background-color: #fff;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
+} */
 
 .searchbar {
   margin-bottom: auto;
   margin-top: auto;
   height: 50px;
-  background-color: #448FAB;
+  background-color: #1f6d79;
   border-radius: 30px;
   padding: 8px;
 }
@@ -34,7 +34,7 @@ html {
 
 .searchbar:hover > .search_input {
   padding: 0 5px;
-  width: 350px;
+  width: 160px;
   caret-color: #BAF7FA;
   transition: width 0.4s linear;
 }
