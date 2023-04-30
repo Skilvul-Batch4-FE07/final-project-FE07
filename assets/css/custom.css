@@ -19,7 +19,6 @@ html {
   margin-top: auto;
   height: 50px;
   background-color: #1f6d79;
-  background-color: #448fab;
   border-radius: 30px;
   padding: 8px;
 }
@@ -39,8 +38,6 @@ html {
   padding: 0 5px;
   width: 160px;
   caret-color: #BAF7FA;
-  width: 350px;
-  caret-color: #baf7fa;
   transition: width 0.4s linear;
 }
 
