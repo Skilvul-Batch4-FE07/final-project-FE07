@@ -11,7 +11,6 @@
       src="https://kit.fontawesome.com/30b2892a0a.js"
       crossorigin="anonymous"
     ></script>
-    <script src="assets/js/forum.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg fixed-top">
@@ -105,8 +104,7 @@
                   </div>
                 </div>
 
-                <h5 class="judulDiskusi mt-3">Title diskusi</h5>
-                <p class="isiDiskusi mt-2 mb-4 pb-2">
+                <p class="mt-3 mb-4 pb-2">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -114,118 +112,28 @@
                 </p>
 
                 <div class="small d-flex justify-content-start">
-                  <a
-                    href="#"
-                    class="d-flex align-items-center me-3"
-                    style="text-decoration: none"
-                  >
+                  <a href="#" class="d-flex align-items-center me-3" style="text-decoration: none;">
                     <i class="fa-regular fa-heart fa-lg me-2"></i>
                     <p class="sumlike mb-0">Like</p>
                   </a>
-                  <a
-                    href="#"
-                    class="d-flex align-items-center me-3"
-                    id="comment-button"
-                    style="text-decoration: none"
-                  >
-                    <i class="fa-regular fa-comment fa-lg me-2" id="cmn"></i>
+                  <a href="#" class="d-flex align-items-center me-3" style="text-decoration: none;">
+                    <i class="fa-regular fa-comment fa-lg me-2"></i>
                     <p class="sumcom mb-0">Comment</p>
                   </a>
-                </div>
-              </div>
-              <div class="card-footer py-3 border-0" style="background-color: #f8f9fa;">
-                <div class="d-flex flex-start w-100">
-                  <img class="rounded-circle shadow-1-strong me-3"
-                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(19).webp" alt="avatar" width="40"
-                    height="40" />
-                  <div class="form-outline w-100">
-                    <textarea class="form-control" id="textAreaExample" rows="4"
-                      style="background: #fff;"></textarea>
-                    <label class="form-label" for="textAreaExample">Message</label>
-                  </div>
-                </div>
-                <div class="float-end mt-2 pt-1">
-                  <button type="button" class="btn btn-primary btn-sm">Post comment</button>
-                  <button type="button" class="btn btn-outline-primary btn-sm">Cancel</button>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-md-12 col-lg-2 col-xl-4">
-            <button
-              type="button"
-              class="btn btn-outline-primary waves-effect"
-              style="width: 100%"
-              data-bs-toggle="modal"
-              data-bs-target="#buatDiskusi"
-              data-bs-whatever="@mdo"
-            >
+            <button type="button" class="btn btn-outline-primary waves-effect" style="width: 100%;">
               <i class="fa-solid fa-circle-plus pe-3"></i>Buat Diskusi Baru
             </button>
-            <button
-              type="button"
-              class="btn btn-link mt-3"
-              style="text-decoration: none"
-            >
+            <button type="button" class="btn btn-link mt-3" style="text-decoration: none;">
               <i class="fa-regular fa-message me-2"></i>Semua Diskusi
-            </button>
-            <br />
-            <button
-              type="button"
-              class="btn btn-link mt-2"
-              style="text-decoration: none"
-            >
+            </button> <br>
+            <button type="button" class="btn btn-link mt-2" style="text-decoration: none;">
               <i class="fa-regular fa-star me-2"></i>Diskusi Saya
             </button>
-          </div>
-        </div>
-      </div>
-      <div
-        class="modal fade"
-        id="buatDiskusi"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">
-                Diskusi Baru
-              </h1>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <form>
-                <div class="mb-3">
-                  <label for="tittle-name" class="col-form-label"
-                    >Judul Diskusi:</label
-                  >
-                  <input type="text" class="form-control" id="tittle-name" />
-                </div>
-                <div class="mb-3">
-                  <label for="message-text" class="col-form-label"
-                    >Pesan Diskusi:</label
-                  >
-                  <textarea class="form-control" id="message-text"></textarea>
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Batal
-              </button>
-              <button type="button" class="btn btn-primary">Kirim</button>
-            </div>
           </div>
         </div>
       </div>
