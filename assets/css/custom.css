@@ -8,16 +8,17 @@ html {
   background-color: #eee
 }
 
-.navbar {
-  background-color: #fff;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
+/* .navbar{
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+} */
+
 
 .searchbar {
   margin-bottom: auto;
   margin-top: auto;
   height: 50px;
-  background-color: #448fab;
+  background-color: #1f6d79;
   border-radius: 30px;
   padding: 8px;
 }
@@ -35,18 +36,18 @@ html {
 
 .searchbar:hover > .search_input {
   padding: 0 5px;
-  width: 350px;
-  caret-color: #baf7fa;
+  width: 160px;
+  caret-color: #BAF7FA;
   transition: width 0.4s linear;
 }
 
 .searchbar:hover > .search_icon {
-  background: #baf7fa;
+  background: #BAF7FA;
   color: #396b7e;
 }
 
-.search_input::-webkit-input-placeholder {
-  color: #dfdcdc;
+.search_input::-webkit-input-placeholder{
+	color: #dfdcdc;
 }
 
 .search_icon {
