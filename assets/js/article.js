@@ -1,33 +1,42 @@
 const url = "https://644e64ed1b4567f4d5866c65.mockapi.io/articles";
 
+//function untuk membuat card artikel di kolom kiri
 function createCard(image, title, description) {
+  //element div
   const card = document.createElement("div");
   card.classList.add("card", "bg-transparent");
 
+  //element img
   const img = document.createElement("img");
   img.src = image;
   img.classList.add("card-img-top");
   img.alt = "img-artikel";
 
+  //element div card-body
   const body = document.createElement("div");
   body.classList.add("card-body");
 
+  //element title
   const titleH5 = document.createElement("h5");
   titleH5.classList.add("card-title", "fw-semibold");
   titleH5.style = "font-size: 18px; padding-bottom: 10px";
   titleH5.textContent = title;
 
+  //element paragraf
   const paragraf = document.createElement("p");
   paragraf.classList.add("card-text", "fw-normal");
   paragraf.style = "font-size: 14px; color: #696969";
   paragraf.textContent = description;
 
+  //element div untuk button
   const button = document.createElement("div");
   button.classList.add("d-flex", "justify-content-end");
 
+  //element button
   const anchor = document.createElement("a");
   anchor.classList.add("btn", "py-3", "px-3");
   anchor.textContent = "Baca Selengkapnya";
+  anchor.href = "#";
 
   button.appendChild(anchor);
 
@@ -38,7 +47,6 @@ function createCard(image, title, description) {
   card.appendChild(img);
   card.appendChild(body);
 
-  console.log(card);
   return card;
 }
 
