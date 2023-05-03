@@ -118,3 +118,24 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
 });
+
+// Mendapatkan referensi ke tautan halaman
+const page1Link = document.getElementById('page1');
+const page2Link = document.getElementById('page2');
+const page3Link = document.getElementById('page3');
+
+// Menambahkan event listener untuk setiap tautan halaman
+page1Link.addEventListener('click', function(event) {
+  event.preventDefault(); // Menghentikan perilaku bawaan dari tautan
+  window.location.href = page1Link.getAttribute('index.html'); // Mengarahkan ke halaman yang ditentukan di atribut href
+});
+
+page2Link.addEventListener('click', function(event) {
+  event.preventDefault();
+  window.location.href = page2Link.getAttribute('forum.html');
+});
+
+page3Link.addEventListener('click', function(event) {
+  event.preventDefault();
+  window.location.href = page3Link.getAttribute('index.html');
+});

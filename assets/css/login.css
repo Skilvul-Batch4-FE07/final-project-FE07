@@ -1,0 +1,116 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container-fluid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 65px 50px 65px 50px;
+}
+
+.image-left {
+    padding: 10px;
+}
+
+.image-left img {
+    width: 100%;
+}
+
+.form-container {
+    padding: 45px;
+}
+
+.container-fluid .image-left h1 {
+    font-weight: normal;
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+
+.image-left h1, p{
+    font-size: 18px;
+    margin-left: 100px;
+}
+
+.image-left span {
+    color: #448FAB;
+}
+
+.form-container .form-group input {
+    outline: none;
+}
+
+.form-container .form-group input {
+    border: 1px solid #448FAB;
+    color: #000000;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    padding: 15px 15px 15px 40px;
+    margin: 10px 0;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+.form-container .form-group input:focus {
+    border: 1px solid #448FAB;
+}
+
+.form-container .form-group button {
+    margin: 10px 0;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    background-color: #448FAB;
+}
+
+.form-container .form-group button:hover {
+    background-color: #528cc2;
+    cursor: pointer;
+}
+
+.form-container p {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #000000;
+    margin-left: 0;
+}
+.form-container button {
+    font-weight: bold;
+    font-size: 22px;
+    color: #1890FF;
+    margin-left: 0;
+}
+
+.form-container a {
+    text-decoration: none;
+    color: #448FAB;
+    font-weight: bold;
+}
+
+.form-container .form-group {
+    position: relative;
+}
+
+.form-container .form-group i {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    color: #448FAB;
+    font-size: 20px;
+}
