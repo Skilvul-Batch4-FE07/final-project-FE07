@@ -36,7 +36,7 @@ function createCard(image, title, description) {
   const anchor = document.createElement("a");
   anchor.classList.add("btn", "py-3", "px-3");
   anchor.textContent = "Baca Selengkapnya";
-  anchor.href = "#";
+  anchor.href = "articleDetail.html";
 
   button.appendChild(anchor);
 
@@ -78,9 +78,9 @@ function createCardPilihan(image, createdAt, title) {
     .slice(0, 3)
     .join("-");
 
-  const titleH5 = document.createElement("h5");
+  const titleH5 = document.createElement("h6");
   titleH5.classList.add("card-title", "fw-bold");
-  titleH5.style.fontSize = "16px";
+  titleH5.style.fontSize = "14px";
   titleH5.textContent = title;
 
   body.appendChild(dateSpan);
@@ -96,6 +96,25 @@ function createCardPilihan(image, createdAt, title) {
   card.appendChild(row);
 
   return card;
+}
+
+
+async function getArticles(page) {
+  try {
+    const response = await fetch(`${url}?page=${page}&limit=2`);
+    const data = await response.json();
+
+    const sorotArticle = document.getElementById("sorotArticle");
+    sorotArticle.innerHTML = "";
+
+    data.forEach(article => {
+      const card = createCard(article.image, article.title, article.description);
+      sorotArticle.appendChild(card);
+    });
+
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 
@@ -116,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
         );
         sorotArticle.appendChild(card);
       });
-      data.slice(2).forEach((item) => {
+      data.slice(4).forEach((item) => {
         const cardPilihan = createCardPilihan(
           item.image,
           item.createdAt,
