@@ -68,9 +68,17 @@
               </div>
             </div>
           </div>
-          <a href="login.html" class="btn btn-success rounded-pill py-2 px-4 border-2 fw-semibold fs-6 ms-2 d-flex justify-content-center align-items-center">
+          <a href="login.html" id="button-login" style="display:block" class="btn btn-success rounded-pill py-2 px-4 border-2 fw-semibold fs-6 ms-2 d-flex justify-content-center align-items-center">
             Login
-          </a
+          </a>
+          <li id="user-navbar" class="nav-item dropdown" style="display: none">
+          <a class="btn btn-success rounded-pill py-2 px-4 border-2 fw-semibold fs-6 ms-2 d-flex justify-content-center align-items-center dropdown-toggle" href="#" role="button" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            YOU
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Logout</a></li>
+          </ul>
+        </li>
         </ul>
       </div>
     </div>
@@ -89,7 +97,7 @@
                 <span class="text-center">Information Center</span>
               </h1>
               <p class="fs-4 mb-4" style="font-size: 22px">Langkah Kecil Menuju Dampak Besar</p>
-              <a href="login.html" class="btn py-3 px-5 fw-semibold fs-6"
+              <a href="login.html" id="button-login" class="btn py-3 px-5 fw-semibold fs-6"
                 >Get Started</a
               >
             </div>
@@ -437,7 +445,7 @@
   </footer>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/loginRegister.js"></script>
 
     </body>
 </html>
