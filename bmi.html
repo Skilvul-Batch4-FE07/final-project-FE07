@@ -94,10 +94,10 @@
           <form>
             <div class="mb-3">
               <label for="tinggi-badan-input" class="form-label">Tinggi Anda (CM)</label>
-              <input type="text" class="form-control" id="tinggi-badan-input" placeholder="170">
+              <input type="text" class="form-control" id="tinggi-badan-input" placeholder="170"><span id="tinggiError" ></span>
             <div class="mb-3">
               <label for="berat-badan-input" class="form-label">Berat Anda (KG)</label>
-              <input type="text" class="form-control" id="berat-badan-input" placeholder="60">
+              <input type="text" class="form-control" id="berat-badan-input" placeholder="60"><span id="beratError" ></span>
             </div>
             <button id="btn-submit-bmi" type="submit" class="btn btn-primary">Submit</button>
           </form>
@@ -115,7 +115,7 @@
     </section> 
 
     
-    
+    <script src="assets/js/bmi.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
