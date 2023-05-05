@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BMI</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="assets/css/bmi.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <script
+      src="https://kit.fontawesome.com/30b2892a0a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+     <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid mx-4">
+        <a class="navbar-brand" href="#">
+          <img
+            src="assets/image/logo.png"
+            alt="Logo Stunting Center"
+            width="60"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-2">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Artikel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tips Kesehatan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">BMI Kalkulator</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Forum Diskusi</a>
+            </li>
+          </ul>
+          <div class="search">
+            <div class="d-flex justify-content-end">
+              <div class="searchbar">
+                <input
+                  class="search_input"
+                  type="text"
+                  name=""
+                  placeholder="Search..."
+                />
+                <a href="#" class="search_icon"
+                  ><i class="fas fa-search"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <button
+            href="#"
+            class="btn btn-success rounded-pill py-2 px-4 border-2 fw-semibold fs-6 ms-2"
+          >
+            Login
+          </button>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- bmi content -->
+    <section id="bmi-content ">
+      <div class="container-md "> 
+        <div id="content1" class="row-md align-items-center text-md-center" >
+          <div id="content1-tittle" class="col-12" >
+            <h1><b>BMI Kalkulator</b></h1>
+          </div>
+        </div>
+        <div id="content2" class="row-md align-items-center text-md-center">
+          <div id="content2-Paragraph" class="col-12">
+            <p>Ayo Hitung Berat Ideal Anda !</p>
+          </div>
+        </div>
+        <div id="content3" class="row-md align-items-center text-md-start">
+          <form>
+            <div class="mb-3">
+              <label for="tinggi-badan-input" class="form-label">Tinggi Anda (CM)</label>
+              <input type="text" class="form-control" id="tinggi-badan-input" placeholder="170">
+            <div class="mb-3">
+              <label for="berat-badan-input" class="form-label">Berat Anda (KG)</label>
+              <input type="text" class="form-control" id="berat-badan-input" placeholder="60">
+            </div>
+            <button id="btn-submit-bmi" type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div id="content4" class="row-md align-items-center text-md-center">
+          <div id="content4-tittle-hasil" class="col-12">
+            <h3>Hasil BMI : </h3>
+          </div>
+          <div id="content5" class="row-md align-items-center text-md-center">
+            <div id="content5-result class="col-12">
+              <p id="result-bmi"></p>
+            </div>
+        </div>
+      </div>
+    </section> 
+
+    
+    
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

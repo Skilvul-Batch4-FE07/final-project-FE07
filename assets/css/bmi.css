@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
+
+@media (max-width: 767.98px) { 
+
+
+ }
+body{  
+    background-color: #448FAB;
+    
+    
+}
+
+
+.container-md {
+    background-color: #E6F7FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    margin-top: 7em;
+    padding: 3em;
+}
+
+
+
+#btn-submit-bmi{
+    
+    border: 1px solid #000000;
+    border-radius: 8px;
+    background: #448FAB;
+}
+
