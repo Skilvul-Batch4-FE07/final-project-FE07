@@ -5,13 +5,12 @@ html {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #eee
 }
 
-/* .navbar{
-    background-color: #fff;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-} */
+.page-link {
+  background-color: #1f6d79;
+  color: #fff;
+}
 
 
 .searchbar {

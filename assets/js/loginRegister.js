@@ -15,11 +15,6 @@ function registerUser(fullname, name, email, password) {
   });
 }
 
-// function showNavbar() {
-//   document.getElementById("user-navbar").style.display = "block";
-//   document.getElementById("button-login").style.display = "none";
-// }
-
 const registerForm = document.getElementById('register-form');
 registerForm.addEventListener('submit', event => {
   event.preventDefault();
@@ -82,8 +77,3 @@ $(document).ready(function() {
     $('#register-form-container').hide();
   });
 });
-
-// panggil fungsi showNavbar() jika user sudah login
-// if (isLoggedIn === 'true') {
-//   showNavbar();
-// }
