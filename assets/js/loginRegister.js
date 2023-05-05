@@ -65,7 +65,6 @@ loginForm.addEventListener('submit', event => {
         localStorage.setItem('isLoggedIn', 'true'); // simpan status login user
         window.location.href = "index.html";
         alert(`Welcome, ${user.email}!`);
-
         loginForm.reset();
       } else {
         alert('Invalid email or password');
