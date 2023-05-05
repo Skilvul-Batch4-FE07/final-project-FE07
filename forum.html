@@ -1,229 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stunting Center - Forum Diskusi</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/custom.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <script
-      src="https://kit.fontawesome.com/30b2892a0a.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="assets/js/forum.js"></script>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stunting Center - Forum Diskusi</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/custom.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="https://kit.fontawesome.com/30b2892a0a.js" crossorigin="anonymous"></script>
+  <script src="assets/js/forum.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0">
     <div class="container">
-        <a class="navbar-brand" href="#">
-          <img
-            src="assets/image/logo.png"
-            alt="Logo Stunting Center"
-            width="80px"
-          />
-        </a>      
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <a class="navbar-brand" href="#">
+        <img src="https://i.postimg.cc/L6xHGczg/logo.png" alt="Logo Stunting Center" width="80px" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="fw-bold navbar-nav me-auto mb-2 mb-lg-0 ms-2" style="font-size: 16px; color:#5F5B5B; gap: 32px">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="article.html">Artikel</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Tips Kesehatan</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="bmi.html">BMI Kalkulator</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="forum.html">Forum Diskusi</a>
-            </li>
-          </ul>
+        <ul class="fw-bold navbar-nav me-auto mb-2 mb-lg-0 ms-2" style="font-size: 16px; color: #5f5b5b; gap: 32px">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="article.html">Artikel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="showInformation()">Tips Kesehatan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bmi.html">BMI Kalkulator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="forum.html">Forum Diskusi</a>
+          </li>
+        </ul>
         <ul class="navbar-nav d-flex flex-row">
           <div class="search">
             <div class="d-flex justify-content-end">
               <div class="searchbar">
-                <input
-                  class="search_input"
-                  type="text"
-                  name=""
-                  placeholder="Search..."
-                />
-                <a href="#" class="search_icon"
-                  ><i class="fas fa-search"></i
-                ></a>
+                <input class="search_input" type="text" name="" placeholder="Search..." />
+                <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
               </div>
             </div>
           </div>
-          <button
-            href="#"
-            class="btn btn-success rounded-pill py-2 px-4 border-2 fw-semibold fs-6 ms-2"
-          >
+          <a href="login.html" id="button-login" style="display:block"
+            class="btn btn-success rounded-pill py-2 px-4 border-2 fw-semibold fs-6 ms-2 d-flex justify-content-center align-items-center">
             Login
-          </button>
+          </a>
         </ul>
       </div>
     </div>
   </nav>
-    <main>
-      <div class="container">
-        <div class="row d-flex">
-          <div class="col-md-12 col-lg-10 col-xl-8">
-            <div class="card">
-              <div class="card-body">
-                <div class="d-flex flex-start">
-                  <img
-                    class="rounded-circle shadow-1-strong me-3"
-                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(19).webp"
-                    alt="avatar"
-                    width="60"
-                    height="60"
-                  />
-                  <div>
-                    <h6 class="fw-bold text-primary mb-1">Username</h6>
-                    <p class="text-muted small mb-0">1 day ago</p>
-                  </div>
-                </div>
-
-                <h5 class="judulDiskusi mt-3">Title diskusi</h5>
-                <p class="isiDiskusi mt-2 mb-4 pb-2">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip consequat.
-                </p>
-
-                <div class="small d-flex justify-content-start">
-                  <a
-                    href="#"
-                    class="d-flex align-items-center me-3"
-                    style="text-decoration: none"
-                  >
-                    <i class="fa-regular fa-heart fa-lg me-2"></i>
-                    <p class="sumlike mb-0">Like</p>
-                  </a>
-                  <a
-                    href="#"
-                    class="d-flex align-items-center me-3"
-                    id="comment-button"
-                    style="text-decoration: none"
-                  >
-                    <i class="fa-regular fa-comment fa-lg me-2" id="cmn"></i>
-                    <p class="sumcom mb-0">Comment</p>
-                  </a>
+  <main>
+    <div class="container">
+      <div class="row d-flex">
+        <div class="col-md-12 col-lg-10 col-xl-8">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex flex-start">
+                <img class="rounded-circle shadow-1-strong me-3"
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(19).webp" alt="avatar" width="60"
+                  height="60" />
+                <div>
+                  <h6 class="fw-bold text-primary mb-1">Fitroh Izatul Malkiyah</h6>
+                  <p class="text-muted small mb-0">1 day ago</p>
                 </div>
               </div>
-              <div class="card-footer py-3 border-0" style="background-color: #f8f9fa;">
-                <div class="d-flex flex-start w-100">
-                  <img class="rounded-circle shadow-1-strong me-3"
-                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(19).webp" alt="avatar" width="40"
-                    height="40" />
-                  <div class="form-outline w-100">
-                    <textarea class="form-control" id="textAreaExample" rows="4"
-                      style="background: #fff;"></textarea>
-                    <label class="form-label" for="textAreaExample">Message</label>
-                  </div>
+
+              <h5 class="judulDiskusi mt-3">Pemenuhan Nutrisi Yang Baik Untuk Balita</h5>
+              <p class="isiDiskusi mt-2 mb-4 pb-2">
+                Gizi balita masih menjadi persoalan yang terjadi di negara-negara berkembang, termasuk Indonesia.
+                Setidaknya ada dua masalah gizi di Tanah Air, yaitu gizi kurang dan kegemukan. Bayi yang terlalu gemuk
+                mungkin selama ini selalu dipandang lucu dan sangat sehat.
+              </p>
+
+              <div class="small d-flex justify-content-start">
+                <a href="#" class="d-flex align-items-center me-3" style="text-decoration: none">
+                  <i class="fa-regular fa-heart fa-lg me-2"></i>
+                  <p class="sumlike mb-0">Like</p>
+                </a>
+                <a href="#" class="d-flex align-items-center me-3" id="comment-button" style="text-decoration: none">
+                  <i class="fa-regular fa-comment fa-lg me-2" id="cmn"></i>
+                  <p class="sumcom mb-0">Comment</p>
+                </a>
+              </div>
+            </div>
+            <div class="card-footer py-3 border-0" style="background-color: #f8f9fa;">
+              <div class="d-flex flex-start w-100">
+                <img class="rounded-circle shadow-1-strong me-3"
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(19).webp" alt="avatar" width="40"
+                  height="40" />
+                <div class="form-outline w-100">
+                  <textarea class="form-control" id="textAreaExample" rows="4" style="background: #fff;"></textarea>
+                  <label class="form-label" for="textAreaExample">Message</label>
                 </div>
-                <div class="float-end mt-2 pt-1">
-                  <button type="button" class="btn btn-primary btn-sm">Post comment</button>
-                  <button type="button" class="btn btn-outline-primary btn-sm">Cancel</button>
-                </div>
+              </div>
+              <div class="float-end mt-2 pt-1">
+                <button type="button" class="btn btn-primary btn-sm">Post comment</button>
+                <button type="button" class="btn btn-outline-primary btn-sm">Cancel</button>
               </div>
             </div>
           </div>
-          <div class="col-md-12 col-lg-2 col-xl-4">
-            <button
-              type="button"
-              class="btn btn-outline-primary waves-effect"
-              style="width: 100%"
-              data-bs-toggle="modal"
-              data-bs-target="#buatDiskusi"
-              data-bs-whatever="@mdo"
-            >
-              <i class="fa-solid fa-circle-plus pe-3"></i>Buat Diskusi Baru
+        </div>
+        <div class="col-md-12 col-lg-2 col-xl-4">
+          <button type="button" class="btn btn-outline-primary waves-effect" style="width: 100%" data-bs-toggle="modal"
+            data-bs-target="#buatDiskusi" data-bs-whatever="@mdo">
+            <i class="fa-solid fa-circle-plus pe-3"></i>Buat Diskusi Baru
+          </button>
+          <button type="button" class="btn btn-link mt-3" style="text-decoration: none">
+            <i class="fa-regular fa-message me-2"></i>Semua Diskusi
+          </button>
+          <br />
+          <button type="button" class="btn btn-link mt-2" style="text-decoration: none">
+            <i class="fa-regular fa-star me-2"></i>Diskusi Saya
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="buatDiskusi" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Diskusi Baru
+            </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="tittle-name" class="col-form-label">Judul Diskusi:</label>
+                <input type="text" class="form-control" id="tittle-name" />
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Pesan Diskusi:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Batal
             </button>
-            <button
-              type="button"
-              class="btn btn-link mt-3"
-              style="text-decoration: none"
-            >
-              <i class="fa-regular fa-message me-2"></i>Semua Diskusi
-            </button>
-            <br />
-            <button
-              type="button"
-              class="btn btn-link mt-2"
-              style="text-decoration: none"
-            >
-              <i class="fa-regular fa-star me-2"></i>Diskusi Saya
-            </button>
+            <button type="button" class="btn btn-primary">Kirim</button>
           </div>
         </div>
       </div>
-      <div
-        class="modal fade"
-        id="buatDiskusi"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">
-                Diskusi Baru
-              </h1>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <form>
-                <div class="mb-3">
-                  <label for="tittle-name" class="col-form-label"
-                    >Judul Diskusi:</label
-                  >
-                  <input type="text" class="form-control" id="tittle-name" />
-                </div>
-                <div class="mb-3">
-                  <label for="message-text" class="col-form-label"
-                    >Pesan Diskusi:</label
-                  >
-                  <textarea class="form-control" id="message-text"></textarea>
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Batal
-              </button>
-              <button type="button" class="btn btn-primary">Kirim</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-  </body>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+  </script>
+  <script src="/assets/js/main.js"></script>
+
+</body>
+
 </html>

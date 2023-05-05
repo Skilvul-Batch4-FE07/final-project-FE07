@@ -62,7 +62,7 @@ body {
     padding-top: 120px;
     padding-bottom: 340px;
     margin-top: 0px;
-    background-image: url('/assets/image/bg_hero.jpg');
+    background-image: url("https://i.postimg.cc/d0bQ4GGW/bg-hero.jpg");
     background-size: cover;
 }
 

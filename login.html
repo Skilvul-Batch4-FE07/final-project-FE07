@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Login and Registration Form</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/login.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poppins:wght@100;200;300;400&family=Quicksand:wght@300;400;600&family=Raleway:wght@100;200;300&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/e7f5845a19.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </head>
+
 <body>
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6 image-left">
                 <h1><b>Selamat Datang , <br><span>Sahabat Sehat</span></b></h1>
                 <p>Silahkan masukkan data anda dengan benar!</p>
-                <img src="assets/image/bg-left.jpeg" alt="Image">
+                <img src="https://i.postimg.cc/BbsSGsYH/bg-left.jpg" alt="Image">
             </div>
             <div class="col-md-6">
                 <div class="row">
@@ -24,46 +23,54 @@
                         <form id="login-form">
                             <div class="form-group">
                                 <i class="fa-regular fa-envelope"></i>
-                                <input type="email" class="form-control" id="login-email" name="email" placeholder="Masukan Email" required>
+                                <input type="email" class="form-control" id="login-email" name="email"
+                                    placeholder="Masukan Email" required>
                             </div>
                             <div class="form-group">
-                                
+
                                 <i class="fa-solid fa-lock"></i>
-                                <input type="password" class="form-control" id="login-password" name="password" placeholder="Masukan Password" required>
+                                <input type="password" class="form-control" id="login-password" name="password"
+                                    placeholder="Masukan Password" required>
                             </div>
                             <div class="form-group">
-                            <p><a href="#">Lupa password?</a></p>
+                                <p><a href="#">Lupa password?</a></p>
                             </div>
                             <div class="form-group">
-                            <button type="submit" class="btn btn-primary">Login</button>
+                                <button type="submit" class="btn btn-primary">Login</button>
                             </div>
-                            <p>Belum punya akun ?<button type="button" class="btn btn-link" id="show-register-form">Daftar Baru</button></p>
+                            <p>Belum punya akun ?<button type="button" class="btn btn-link"
+                                    id="show-register-form">Daftar Baru</button></p>
                         </form>
-                         <p><a href="index.html">Kembali ke halaman utama</a></p>
+                        <p><a href="index.html">Kembali ke halaman utama</a></p>
 
                     </div>
                     <div class="col-md-12 form-container" id="register-form-container" style="display: none;">
                         <form id="register-form">
                             <div class="form-group">
                                 <i class="fa-solid fa-user-pen"></i>
-                                <input type="fullname" class="form-control" id="register-fullname" name="fullname" placeholder="Masukan Nama Lengkap" required>
+                                <input type="fullname" class="form-control" id="register-fullname" name="fullname"
+                                    placeholder="Masukan Nama Lengkap" required>
                             </div>
                             <div class="form-group">
                                 <i class="fa-solid fa-user-check"></i>
-                                <input type="name" class="form-control" id="register-name" name="username" placeholder="Masukan Username" required>
+                                <input type="name" class="form-control" id="register-name" name="username"
+                                    placeholder="Masukan Username" required>
                             </div>
                             <div class="form-group">
                                 <i class="fa-regular fa-envelope"></i>
-                                <input type="email" class="form-control" id="register-email" name="email" placeholder="Masukan Email" required>
+                                <input type="email" class="form-control" id="register-email" name="email"
+                                    placeholder="Masukan Email" required>
                             </div>
                             <div class="form-group">
                                 <i class="fa-solid fa-lock"></i>
-                                <input type="password" class="form-control" id="register-password" name="password" placeholder="Masukan Password" required>
+                                <input type="password" class="form-control" id="register-password" name="password"
+                                    placeholder="Masukan Password" required>
                             </div>
                             <div class="form-group">
-                            <button type="submit" class="btn btn-primary">Register</button>
+                                <button type="submit" class="btn btn-primary">Register</button>
                             </div>
-                            <p>Sudah punya akun ? <button type="button" class="btn btn-link" id="show-login-form">Login Sekarang</button></p>
+                            <p>Sudah punya akun ? <button type="button" class="btn btn-link" id="show-login-form">Login
+                                    Sekarang</button></p>
                         </form>
                         <p><a href="index.html">Kembali ke halaman utama</a></p>
                     </div>
@@ -76,4 +83,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="/assets/js/loginRegister.js"></script>
 </body>
+
 </html>

@@ -10,8 +10,15 @@ function isEmailRegistered(email) {
 function registerUser(fullname, name, email, password) {
   return fetch(apiUrl, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ fullname, name, email, password })
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      fullname,
+      name,
+      email,
+      password
+    })
   });
 }
 
@@ -30,9 +37,11 @@ registerForm.addEventListener('submit', event => {
         registerUser(fullname, name, email, password)
           .then(response => {
             if (response.ok) {
-                alert('Registration successful');
-                showNavbar()
+              window.location.href = "login.html";
+              alert('Registration successful');
               registerForm.reset();
+              showNavbar()
+
             } else {
               alert('Registration failed');
             }
@@ -56,6 +65,7 @@ loginForm.addEventListener('submit', event => {
         localStorage.setItem('isLoggedIn', 'true'); // simpan status login user
         window.location.href = "index.html";
         alert(`Welcome, ${user.email}!`);
+
         loginForm.reset();
       } else {
         alert('Invalid email or password');
@@ -64,15 +74,15 @@ loginForm.addEventListener('submit', event => {
     .catch(error => console.error(error));
 });
 
-$(document).ready(function() {
-  $('#show-register-form').click(function() {
+$(document).ready(function () {
+  $('#show-register-form').click(function () {
     $('#login-form-container').hide();
     $('#register-form-container').show();
   });
 });
 
-$(document).ready(function() {
-  $('#show-login-form').click(function() {
+$(document).ready(function () {
+  $('#show-login-form').click(function () {
     $('#login-form-container').show();
     $('#register-form-container').hide();
   });

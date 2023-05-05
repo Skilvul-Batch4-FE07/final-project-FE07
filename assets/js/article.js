@@ -6,9 +6,9 @@ async function getArticles(page) {
     const response = await fetch(`${url}?page=${page}&limit=6`);
     const data = await response.json();
 
-    
-const sorotArticle = document.getElementById("sorotArticle");
-sorotArticle.innerHTML = `
+
+    const sorotArticle = document.getElementById("sorotArticle");
+    sorotArticle.innerHTML = `
   <div class="col">
     <div class="row-md-6 mb-3">
       <div class="card h-100">
@@ -45,7 +45,7 @@ sorotArticle.innerHTML = `
     // Menampilkan artikel pilihan
     const myArticles = document.getElementById("myArticles");
     myArticles.innerHTML = "";
-    for (let i = 1; i < data.length; i++) {
+    for (let i = 2; i < data.length; i++) {
       myArticles.innerHTML += `
         <div class="col-md-12">
           <div class="card">
@@ -69,7 +69,7 @@ sorotArticle.innerHTML = `
 
       `;
     }
-  // Menambahkan event listener ke tombol Read More
+    // Menambahkan event listener ke tombol Read More
     const readMoreButtons = document.querySelectorAll(".read-more");
     readMoreButtons.forEach((button) => {
       button.addEventListener("click", (event) => {
@@ -101,7 +101,7 @@ async function getArticleById(id) {
         </div>
       </div>
     `;
-    
+
   } catch (error) {
     console.log(error);
   }
@@ -123,39 +123,38 @@ window.addEventListener("load", () => {
 });
 
 // menambahkan event listener pada tombol Next Article
-  document.getElementById("nextArticleButton").addEventListener("click", function() {
-    // mengambil id artikel yang sekarang ditampilkan
-    const currentId = parseInt(window.location.search.replace("?id=", ""));
-    // mengambil id artikel selanjutnya
-    const nextId = currentId + 1;
-    if (nextId == 10) {
+document.getElementById("nextArticleButton").addEventListener("click", function () {
+  // mengambil id artikel yang sekarang ditampilkan
+  const currentId = parseInt(window.location.search.replace("?id=", ""));
+  // mengambil id artikel selanjutnya
+  const nextId = currentId + 1;
+  if (nextId == 10) {
     // jika masih ada artikel sebelumnya
     // redirect ke halaman detail artikel sebelumnya
-      document.getElementById("nextArticleButton").style.display = "none";
-    
+    document.getElementById("nextArticleButton").style.display = "none";
+
   } else {
     // jika artikel yang ditampilkan adalah artikel pertama (index 0)
     // sembunyikan tombol "Prev Article"
     window.location.href = "articleDetail.html?id=" + nextId;
   }
-  });
+});
 
 // menambahkan event listener pada tombol Next Article
-  document.getElementById("prevArticleButton").addEventListener("click", function() {
-    // mengambil id artikel yang sekarang ditampilkan
-    const currentId = parseInt(window.location.search.replace("?id=", ""));
-    // mengambil id artikel selanjutnya
-    const prevId = currentId - 1;
+document.getElementById("prevArticleButton").addEventListener("click", function () {
+  // mengambil id artikel yang sekarang ditampilkan
+  const currentId = parseInt(window.location.search.replace("?id=", ""));
+  // mengambil id artikel selanjutnya
+  const prevId = currentId - 1;
 
-    if (prevId == 0) {
+  if (prevId == 0) {
     // jika masih ada artikel sebelumnya
     // redirect ke halaman detail artikel sebelumnya
-      document.getElementById("prevArticleButton").style.display = "none";
-    
+    document.getElementById("prevArticleButton").style.display = "none";
+
   } else {
     // jika artikel yang ditampilkan adalah artikel pertama (index 0)
     // sembunyikan tombol "Prev Article"
     window.location.href = "articleDetail.html?id=" + prevId;
   }
 });
-  

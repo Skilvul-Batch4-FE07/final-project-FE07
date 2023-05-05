@@ -28,3 +28,11 @@ body{
     background: #448FAB;
 }
 
+
+#tinggiError {
+    color: red;
+}
+
+#beratError {
+    color: red
+}
